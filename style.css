@@ -1,0 +1,487 @@
+:root{
+    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Cormorant Garamond', serif;
+ 
+}
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+
+.hero{
+    height:103vh;
+    width:104vw;
+    background-image: url(../bgrnd.png);
+    background-size:contain;
+    background-position: right;
+    background-repeat:no-repeat;
+    background-blend-mode: multiply;
+    background-color:#E0D3DD;
+    margin-right: 0;   
+}
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-top:45px;
+    padding-left:8%;
+    padding-right:8%;
+}
+.logo{
+    color:#5F4562;
+    font-size:35px;
+    letter-spacing: 1px;
+    cursor:pointer;
+}
+span{
+    color:#5F4562;
+}
+
+nav ul li{
+    list-style-type: none;
+    display:inline-block;
+    padding:10px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color:#24201F;
+    font-family: 'Cormorant Garamond', serif;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    
+    
+}
+nav ul li a:hover{
+    color:#24201F;
+    transition: .4s;
+}
+
+.btn{
+    text-decoration: none;
+    font-weight:bold;
+    border:2px solid transparent;
+    color:#EBE9EC;
+    background-color:#5F4562;
+    padding: 10px 25px;
+    border-radius:30px;
+    transition: transform .4s; 
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.intro{
+    position:absolute;
+    top:50%;
+    left:8%;
+    
+}
+h1{
+    color:#24201F;
+    margin:20px 0 20px;
+    font-size:2em;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight:bold;
+    max-width: 100%;
+    
+}
+h2{
+    color:#24201F;
+    font-size:1.5em;
+    margin-bottom: 50px;
+    font-family:'Cormorant Garamond', serif;
+}
+
+.news form{
+    width:380px;
+    max-width:100%;
+    position:relative;
+    
+}
+.news form input:first-child{
+    display:inline-block;
+    width:100%;
+    padding:15px;
+    border:2px solid #5F4562;
+    outline:none;
+    border-radius: 30px;
+    
+    
+}
+.news form input:last-child{
+    position:absolute;
+    display:inline-block;
+    outline:none;
+    border:none;
+    padding:10px 30px;
+    border-radius: 30px;
+    background-color: #5F4562;
+    color:#EBE9EC;
+    cursor:pointer;
+    box-shadow: 5px 5px 10px #5F4562;
+    top:6px;
+    right:-130px;
+}
+
+
+
+/* About Section */
+.about{
+    padding:20px;
+    display: flex;  
+    flex-direction: column;
+    height:600px;
+}
+
+.about-content{
+    display: flex;  
+    flex-direction: wrap;
+    height:600px;
+}
+
+.about-img{
+    height:400px;
+    width:500px;
+    padding:0px 30px;  
+     
+}
+
+.about-heading h1{
+    margin:55px;
+    text-align: center;
+    
+    
+}
+.about-content p{
+    color:#5F4562;
+    letter-spacing: 1px;
+    font-size:1.2rem;
+    margin:20px;
+    padding:20px;
+    width:500px;
+    font-weight: bolder;
+}
+@media screen and (max-width: 600px) {
+  .about {
+    width: 100%;
+  }
+  
+}
+
+button{
+    text-decoration: none;
+    font-weight:bold;
+    border:2px solid transparent;
+    color:#fff;
+    background-color:#5F4562;
+    padding: 10px 30px;
+    border-radius:30px;
+    transition: transform .4s; 
+    margin:50px;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid #5F4562;
+    cursor:pointer;
+    color:#5F4562;
+}
+
+/* Education/ Skills/ Fields */
+.experience{
+    padding:50px;
+    margin:50px;   
+}
+.box{
+    background:#fff;
+    max-width:100%;
+    padding:30px;
+    display:flex;
+    justify-content: start;
+    
+}
+.title h1{
+    color:#5F4562;
+    font-size:2rem;
+    margin:30px;
+       
+}
+
+.education{ 
+    padding:20px;
+    margin:15px;
+    display: flex;
+    flex-direction: column;
+    width:50%;
+}
+.skills .fields {
+    display:flex;
+    flex-direction: row;   
+}
+.skills{
+    margin:15px;
+    padding:20px;
+}
+.fields{
+    margin:15px;
+    padding:20px;
+}
+.content h2{
+    margin:20px;
+    font-size:1.2rem;
+}
+.content p{
+    color:#5F4562;
+    letter-spacing: 1px;
+    font-size:1.2em;
+    margin:20px;
+    padding:20px;
+    width:500px;
+    
+}
+.content ul li {
+    letter-spacing: 2px;
+    font-size: 1.5;
+    font-weight:900;
+    margin:10px;
+    font-family:'Cormorant Garamond', serif;
+}
+/* My Work*/
+.grid-container{
+    max-width: 100%;
+    content: "";
+    clear:both;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap:10px;
+    padding:20px;
+    margin:50px;
+    justify-content: center;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px #D0C2CF;
+    background-image: url(decorative2.png);
+    background-size:100%;
+    background-color: #EBE9EC;
+    background-position:center;
+    background-repeat: no-repeat;
+    
+    
+    
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    margin:50px;
+    
+    
+}
+.flip-card-inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+/* horizontal flip when moving the mouse over it */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip-card-front {
+    background-color: black;
+    position: absolute;
+    display: block;
+    
+}
+.flip-card-back {
+    background-color: #EBE9EC;
+    color: #5F4562;
+    transform: rotateY(180deg);
+    font-family: 'Cinzel Decorative', cursive;  
+    border: 3px solid #D0C2CF;
+    position: absolute;
+    display: block;
+}
+.flip-card button{
+    position:absolute;
+}
+.flip-card-back>p{
+    font-family: 'Cormorant Garamond', serif;
+}
+.heading{
+    font-size: 2em;
+    justify-content:center;
+    text-align: center;
+    opacity: 50%;
+    margin-top:20px;  
+}
+
+
+
+/* GALLERY */
+.gallery-container{
+    margin:50px;
+    padding: 50px;
+}
+.gallery-container .heading{
+    position: absolute;
+    right:20px;
+}
+.gallery-container  .heading h1{
+    font-size: 1.5em;
+    font-weight: bolder;
+    padding: 20px;
+    margin:20px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+.gallery-container .heading h1 span{
+    font-weight: 100;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.gallery-items{
+    flex: 50%;
+    max-width: 30%;
+    padding:10px;   
+}
+.gallery-items img{
+    margin-top:8px;
+    vertical-align: middle;
+    width: 100%;
+}
+.gallery-items img:hover {
+    transform: scale(1.2);
+    box-shadow: 5px 5px 10px #5F4562;
+}
+.gallery-items video:hover {
+    transform: scale(1.2);
+    box-shadow: 5px 5px 10px #5F4562;
+}
+.gallery-items video{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Responsive layout */
+@media screen and (max-width: 900px) {
+    .gallery-items{
+      flex: 50%;
+      max-width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .gallery-items {
+      flex: 100%;
+      max-width: 100%;
+    }
+}
+.text{
+    padding:50px;
+    width:80%;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    color:#24201F;
+    font-size:1.2em;
+    font-weight: bolder;
+    margin:30px;
+}
+
+/* MyGoal*/
+.goal h1{
+    justify-content: center;
+    text-align: center;
+    padding:50px;
+    
+    
+}
+.text-box{
+    padding:50px;
+    width:80%;
+    justify-content: center;
+    text-align: center;
+    max-width: 100%;
+    background-image: url(decorative.png);
+    background-size:cover;
+    
+
+}
+.text-box p{
+    justify-content: center;
+    font-size:1.2em;
+    margin:30px;
+    font-family: 'Cormorant Garamond', serif;
+    color:#24201F;
+    
+    
+    
+}
+
+
+
+
+footer{
+    background-color: #E0D3DD;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #EBE9EC;
+    padding:30px;
+    margin-top:50px;
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    
+    
+    
+}
+footer p{
+    font-size: 20px;
+    color:#5F4562;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Cormorant Garamond', serif;
+
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+.social a{
+    width:45px;
+    height:45px;
+    display: flex;
+    align-items: center;
+    margin:22px 10px;
+    justify-content: center;
+    background-color: #5F4562;
+    border-radius: 50%;
+    
+}
